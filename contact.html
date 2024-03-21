@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!-- css styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./aboutMe.css" />
+    <link rel="stylesheet" href="./resume.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./root.css" />
+  </head>
+  <body>
+    <section id="contact">
+      <div class="contact__flex">
+        <div class="contact__left">
+          <h1>Contactez-moi</h1>
+          <p>
+            J'aimerai entrer en contact avec vous. merci de partager autant
+            d'informations que possible afin que nous puissions tirer le
+            meilleur parti de notre premier meeting.
+          </p>
+          <p>
+            <strong>Situé à:</strong>
+            <br />
+            7 Chemin de la forge, 91200 Athis mons
+          </p>
+          <p>
+            <strong>Téléphone:</strong>
+            <br />
+            (+33) 06 78 38 94 53
+          </p>
+        </div>
+
+        <div class="contact__right">
+          <h1>Décrivez votre message</h1>
+          <form id="contact__form">
+            <div>
+              <label>Nom:</label>
+              <input type="text" required id="input__name" />
+            </div>
+            <div>
+              <label>Email:</label>
+              <input type="email" required id="input__email" />
+            </div>
+            <div>
+              <label>Message:</label>
+              <textarea
+                type="text"
+                cols="30"
+                rows="5"
+                required
+                id="input__textarea"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                class="btn-main"
+                type="submit"
+                style="width: fit-content"
+                id="contact__submit"
+              >
+                Valider
+                <i
+                  class="fa-solid fa-arrow-right"
+                  style="margin-left: 10px"
+                ></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- font awesome link-->
+    <script
+      src="https://kit.fontawesome.com/b01855ebf1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="contact.js"></script>
+  </body>
+</html>

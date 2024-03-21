@@ -1,0 +1,156 @@
+#resume {
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-grid {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.resume-grid-left h3, .resume-grid-right h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.resume-grid-content {
+    border-bottom: 2px solid #eee;
+    margin: 15px 20px;
+    padding: 15px 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume-grid-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #444;
+}
+
+.resume-grid-timeline {
+    border-left: 2px solid var(--main-color);
+}
+
+.resume__skills {
+    padding-top: 30px;
+    width: 65%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.resume__skills__grid__progress__gray {
+    background-color: #eee;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.resume__skills__grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.resume__skills__grid__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume__skills__grid__text h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.resume__skills__grid__text p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.resume__skills__grid__progress {
+    background-color: var(--main-color);
+    height: 5px;
+    border-radius: 5px;
+}
+
+
+.w-60 {
+    width: 60%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+
+.resume-btn {
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-grid-timeline {
+        border-left: none;
+        border-top: 2px solid var(--main-color);
+    }
+
+    .resume__skills__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume__skills__grid__text {
+        flex-direction: column;
+    }
+
+    .resume__skills__grid__text h4 {
+        margin-bottom: 10px;
+    }
+
+    .resume__skills__grid__progress {
+        margin-bottom: 10px;
+    } 
+}

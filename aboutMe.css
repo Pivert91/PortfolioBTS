@@ -1,0 +1,227 @@
+#about-me {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me nav {
+    max-width: 80%;
+    width: 100%;
+    /* margin: 0 auto; /* center the element : 0 on top and bottom and on the side i let the css handle it equaly */
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+#about-me nav ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#about-me nav ul li {
+    padding: 5px 15px;
+}
+
+#about-me nav ul a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+#about-me nav ul a:hover {
+    color: #d4d4d4;
+}
+
+#about-me nav ul li a i {
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+#about-me nav ul li a i:hover {
+    color: deepskyblue;
+    transform: scale(1.2);
+}
+
+
+.section-title {
+    padding-top: 40px;
+}
+
+.section-title h2 {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 3px;
+}
+
+.section-title p {
+    font-size: 32px;
+    font-weight: medium;
+}
+
+.aboutme-main {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+}
+
+.aboutme-main .aboutme__left {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutme-main .aboutme__left .aboutme__left__mainP {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aboutme-main .aboutme__left .aboutme__left__mainP span {
+    font-weight: 700;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.aboutme-main .aboutme__left .aboutme__left__text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    width: 80%;
+    font-weight: light;
+}
+
+.aboutme__left__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns 1fr = 1 fraction */
+}
+
+.aboutme__left__grid2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.aboutme__left__grid p {
+    font-size: 14px;
+}
+
+.aboutme__right {
+    width: 20%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.aboutme__right__number {
+    position: relative;
+    text-align: center;
+}
+
+.aboutme__right__number h2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-top: -10px;    
+}
+
+.aboutme__right__circle {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    margin: 0 auto;
+}
+
+.aboutme__right__number p {
+    font-size: 20px;
+}
+
+.aboutme__right__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.border-top-gray {
+    border-top: 1px solid #d4d4d4;
+    padding-top: 20px;
+}
+
+/* screen width is < than 948 */
+@media screen and (max-width: 948px) {
+    #about-me nav {
+        max-width: 90%;
+    }
+
+    .aboutme-main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aboutme-main .aboutme__left {
+        width: 100%;
+    }
+    .aboutme__left__grid2 {
+        margin-top: 20px;
+    }
+
+    .aboutme-main .aboutme__left .aboutme__left__mainP {
+        font-size: 20px;
+    }
+
+    .aboutme-main .aboutme__left .aboutme__left__text {
+        width: 100%;
+    }
+
+    .aboutme__right {
+        width: 100%;
+    }
+
+    .aboutme__right__number {
+        margin: 0 auto;
+    }
+
+    .aboutme__right__number h2 {
+        font-size: 50px;
+    }
+
+    .aboutme__right__circle {
+        width: 50px;
+        height: 50px;
+        top: 10px;
+    }
+
+    .aboutme__right__number p {
+        font-size: 16px;
+    }
+
+    .aboutme__right__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme__left__grid2 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #about-me nav {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}

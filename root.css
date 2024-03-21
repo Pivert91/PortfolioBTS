@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --main-color: rgb(74, 157, 253);
+}

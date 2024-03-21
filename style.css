@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.full-height {
+  height: 100vh; /* viewport height */
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center; /* alignment on the x axis */
+  align-items: center; /* alignment on the y axis */
+  flex-direction: column;
+}
+
+.rounded-img {
+  width: 150px;
+  border-radius: 50%; /* 50% = circle */
+  border: 8px solid white;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600; /* medium */
+  margin: 20px 0;
+  font-size: 30px;
+  width: 60%;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500; /* normal */
+  margin: 10px 0;
+}
+
+.links {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500; /* normal */
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.links > a {
+  height: fit-content;
+  width: fit-content;
+}
+
+.btn-main {
+  padding: 10px 30px;
+  margin: 15px 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: black;
+  border: none;
+  transition: all 0.5s;
+}
+
+.btn-main:hover {
+  background-color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-relative a i {
+  position: absolute;
+  bottom: 15px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    width: 90%;
+  }
+}
