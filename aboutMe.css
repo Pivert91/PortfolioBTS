@@ -225,3 +225,9 @@
         flex-direction: column;
     }
 }
+
+/* bonus */
+
+.takeFullWidth {
+    width: 100% !important;
+}
